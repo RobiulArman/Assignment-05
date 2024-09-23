@@ -32,35 +32,36 @@
         }
     </script>
 </head>
+
 <body class="font-lexend">
     <nav class=" container mx-auto sticky top-0 w-full bg-transparent backdrop-blur-sm z-50"></nav>
-        <div
-            class="bg-navbg flex flex-col md:flex-row justify-center md:justify-around items-center gap-4 py-7 rounded-lg">
-            <div>
-                <a href="blog.html" target="_blank">
-                    <button class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold">Blog</button>
-                </a>
-            </div>
-            <div class="flex items-center gap-4">
-                <img src="assets/logo.png" alt="">
-                <h3 class="text-xl font-bold">Donate Bangladesh</h3>
-            </div>
-            <div class="flex items-center gap-4">
-                <img src="assets/coin.png" alt="">
-                <h3 class="text-xl font-semibold opacity-80"><span id="grand-total">50000</span> BDT</h3>
-            </div>
+    <div class="bg-navbg flex flex-col md:flex-row justify-center md:justify-around items-center gap-4 py-7 rounded-lg">
+        <div>
+            <a href="blog.html" target="_blank">
+                <button class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold">Blog</button>
+            </a>
         </div>
+        <div class="flex items-center gap-4">
+            <img src="assets/logo.png" alt="">
+            <h3 class="text-xl font-bold">Donate Bangladesh</h3>
+        </div>
+        <div class="flex items-center gap-4">
+            <img src="assets/coin.png" alt="">
+            <h3 class="text-xl font-semibold opacity-80"><span id="grand-total">50000</span> BDT</h3>
+        </div>
+    </div>
 
-        <div class="flex  gap-5 justify-center my-5">
-            <button id="donation-btn" class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold border-2">Donation</button>
-            <button id="history-btn" class="text-xl font-semibold opacity-80 border-2 px-5 py-2 rounded-lg">History</button>
-        </div>
-    
+    <div class="flex  gap-5 justify-center my-5">
+        <button id="donation-btn"
+            class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold border-2">Donation</button>
+        <button id="history-btn" class="text-xl font-semibold opacity-80 border-2 px-5 py-2 rounded-lg">History</button>
+    </div>
+
     </nav>
     <main>
 
 
-        <section class="space-y-4" id="donation-section"></section>
+        <section class="space-y-4" id="donation-section">
             <!-- Donation for Noakhali -->
             <section class="w-11/12 mx-auto">
                 <div class="hero py-5 border-2 rounded-lg">
@@ -84,16 +85,15 @@
                             </p>
                             <input id="amount-noakhali" class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number"
                                 name="" id="noakhali" placeholder="Write Donation Ammount"> <br>
-                            <button id="donate-noakhali"
-                                class="btn bg-btnPrimary w-full">Donate Now</button>
+                            <button id="donate-noakhali" class="btn bg-btnPrimary w-full">Donate Now</button>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-              <!-- Donation for feni -->
-              <section class="w-11/12 mx-auto">
+            <!-- Donation for feni -->
+            <section class="w-11/12 mx-auto">
                 <div class="hero py-5 border-2 rounded-lg">
                     <div class="hero-content flex-col lg:flex-row">
                         <div class="w-full md:w-1/2"><img src="assets/feni.png" class=" rounded-lg shadow-2xl" />
@@ -118,45 +118,54 @@
                             </p>
                             <input class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number" name=""
                                 id="amount-feni" placeholder="Write Donation Ammount"> <br>
-                            <button id="donate-feni"
-                                class="btn bg-btnPrimary w-full">Donate Now</button>
+                            <button id="donate-feni" class="btn bg-btnPrimary w-full">Donate Now</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-             <!-- Aid for Quota Movement -->
-        <section class="w-11/12 mx-auto">
-            <div class="hero py-5 border-2 rounded-lg">
-                <div class="hero-content flex-col lg:flex-row">
-                    <div class="w-full md:w-1/2"><img src="assets/quota-protest.png"
-                            class=" rounded-lg shadow-2xl" />
-                    </div>
-
-                    <div class="w-full md:w-1/2">
-                        <div class="bg-slate-300 rounded-lg px-3 py-2 max-content gap-4 inline-flex mb-5">
-                            <img src="assets/coin.png" alt="">
-                            <p class="text-lg font-semibold"><span id="qouta-total">0</span> BDT</p>
+            <!-- Aid for Quota Movement -->
+            <section class="w-11/12 mx-auto">
+                <div class="hero py-5 border-2 rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <div class="w-full md:w-1/2"><img src="assets/quota-protest.png"
+                                class=" rounded-lg shadow-2xl" />
                         </div>
-                        <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
-                        <p class="py-6">
-                            The recent Quota movement has resulted in numerous injuries and significant hardship for
-                            many individuals. Your support is crucial in providing medical assistance,
-                            rehabilitation,
-                            and necessary supplies to those affected. By contributing, you help ensure that injured
-                            individuals receive the care and support they need during this challenging time. Every
-                            donation plays a vital role in alleviating their suffering and aiding in their recovery.
-                            Please consider making a donation to support these brave individuals in their time of
-                            need.
-                        </p>
-                        <input class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number" name=""
-                            id="amount-qouta" placeholder="Write Donation Ammount"> <br>
-                        <button id="donate-qouta"
-                            class="btn bg-btnPrimary w-full">Donate Now</button>
+
+                        <div class="w-full md:w-1/2">
+                            <div class="bg-slate-300 rounded-lg px-3 py-2 max-content gap-4 inline-flex mb-5">
+                                <img src="assets/coin.png" alt="">
+                                <p class="text-lg font-semibold"><span id="quota-total">0</span> BDT</p>
+                            </div>
+                            <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+                            <p class="py-6">
+                                The recent Quota movement has resulted in numerous injuries and significant hardship for
+                                many individuals. Your support is crucial in providing medical assistance,
+                                rehabilitation,
+                                and necessary supplies to those affected. By contributing, you help ensure that injured
+                                individuals receive the care and support they need during this challenging time. Every
+                                donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                                Please consider making a donation to support these brave individuals in their time of
+                                need.
+                            </p>
+                            <input class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number" name=""
+                                id="amount-qouta" placeholder="Write Donation Ammount"> <br>
+                            <button  id="donate-qouta" class="btn bg-btnPrimary w-full">Donate Now</button>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </section>
+
+         <!-- History Section -->
+
+         <section>
+            <div id="History-section" class="space-y-4 hidden">
+
             </div>
         </section>
-    </section>
     </main>
+
+    <!-- Adding Js File to Html -->
+    <script src="home.js"></script>
 </body>
