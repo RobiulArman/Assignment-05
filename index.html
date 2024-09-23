@@ -21,7 +21,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        navBG: "rgb(249, 247, 243)",
+                        navbg: "rgb(249, 247, 243)",
                         btnPrimary: "#B4F461"
                     },
                     fontFamily: {
@@ -32,6 +32,29 @@
         }
     </script>
 </head>
-<body>
-    
+<body class="font-lexend">
+    <nav class=" container mx-auto sticky top-0 w-full bg-transparent backdrop-blur-sm z-50"></nav>
+        <div
+            class="bg-navbg flex flex-col md:flex-row justify-center md:justify-around items-center gap-4 py-7 rounded-lg">
+            <div>
+                <a href="blog.html" target="_blank">
+                    <button class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold">Blog</button>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="assets/logo.png" alt="">
+                <h3 class="text-xl font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="assets/coin.png" alt="">
+                <h3 class="text-xl font-semibold opacity-80"><span id="grand-total">50000</span> BDT</h3>
+            </div>
+        </div>
+
+        <div class="flex  gap-5 justify-center my-5">
+            <button id="donation-btn" class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold border-2">Donation</button>
+            <button id="history-btn" class="text-xl font-semibold opacity-80 border-2 px-5 py-2 rounded-lg">History</button>
+        </div>
+
+    </nav>
 </body>
