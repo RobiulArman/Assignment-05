@@ -121,7 +121,7 @@
                             </p>
                             <input class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number" name=""
                                 id="amount-feni" placeholder="Write Donation Ammount"> <br>
-                            <button id="donate-feni" class="btn bg-btnPrimary w-full">Donate Now</button>
+                            <button  id="donate-feni" class="btn bg-btnPrimary w-full">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,8 @@
                             </p>
                             <input class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number" name=""
                                 id="amount-qouta" placeholder="Write Donation Ammount"> <br>
-                            <button  id="donate-qouta" class="btn bg-btnPrimary w-full">Donate Now</button>
+                            <button onclick="dialog_box.showModal()"
+                            id="donate-qouta" class="btn bg-btnPrimary w-full">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -167,6 +168,24 @@
 
             </div>
         </section>
+
+         <!-- The Modal of Congrates-->
+
+         <dialog id="congo_box" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box text-center space-y-3">
+                <h3 class="text-3xl font-bold">Congrates!</h3>
+                <div class="flex justify-center"><img src="assets/coin.png" alt=""></div>
+                <p class="text-lg font-semibold mt-4 opacity-80">You have donated for Humankind</p>
+                <p class="text-xl font-bold">Successfully</p>
+
+                <div class="modal-action flex justify-center">
+                    <form method="dialog">
+
+                        <button class="btn">Close Confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
 
     <!-- Adding Js File to Html -->

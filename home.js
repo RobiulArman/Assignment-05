@@ -44,6 +44,7 @@ document.getElementById("donate-noakhali").addEventListener("click", function ()
         return;
     }
     else {
+        document.getElementById('congo_box').showModal();
         const noakhaliTotal = valueFormText("noakhali-total");
         const noakhaliAmount = noakhaliTotal + donateAmount;
         document.getElementById("noakhali-total").innerText = noakhaliAmount;
@@ -74,7 +75,7 @@ document.getElementById("donate-feni").addEventListener("click", function () {
         return;
     }
     else{
-
+        document.getElementById('congo_box').showModal();
         const noakhaliTotal = valueFormText("feni-total");
         const feniAmount = noakhaliTotal + donateAmount;
         document.getElementById("feni-total").innerText = feniAmount;
@@ -107,7 +108,7 @@ document.getElementById("donate-qouta").addEventListener("click", function () {
     }
 
     else{
-
+        document.getElementById('congo_box').showModal();
         const noakhaliTotal = valueFormText("quota-total");
         const noakhaliAmount = noakhaliTotal + donateAmount;
         document.getElementById("qouta-total").innerText = noakhaliAmount;
