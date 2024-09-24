@@ -93,7 +93,7 @@ document.getElementById("donate-feni").addEventListener("click", function () {
 
 });
 
-document.getElementById("donate-qouta").addEventListener("click", function () {
+document.getElementById("donate-quota").addEventListener("click", function () {
 
     const donateAmount = inputvalueByID("amount-quota");
     if (donateAmount <= 0) {
@@ -111,7 +111,7 @@ document.getElementById("donate-qouta").addEventListener("click", function () {
         document.getElementById('congo_box').showModal();
         const noakhaliTotal = valueFormText("quota-total");
         const noakhaliAmount = noakhaliTotal + donateAmount;
-        document.getElementById("qouta-total").innerText = noakhaliAmount;
+        document.getElementById("quota-total").innerText = noakhaliAmount;
         GrandTotal = GrandTotal - donateAmount;
         document.getElementById("grand-total").innerText = GrandTotal;
     

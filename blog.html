@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <!-- Daisy UI and tailwind css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        navbg: "rgb(249, 247, 243)",
+                        btnPrimary: "#B4F461"
+                    },
+                    fontFamily: {
+                        lexend: ['Lexend', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <nav class=" container mx-auto sticky top-0 w-full bg-transparent backdrop-blur-sm z-50">
+
+
+        <div
+            class="bg-navbg flex flex-col md:flex-row justify-center md:justify-around items-center gap-4 py-7 rounded-lg">
+            <div>
+                <a href="index.html">
+                    <button class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold">Home</button>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="assets/logo.png" alt="">
+                <h3 class="text-xl font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="assets/coin.png" alt="">
+                <h3 class="text-xl font-semibold opacity-80"><span id="grand-total">50000</span> BDT</h3>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-10 py-10">
+
+        <h3 class="w-11/12 mx-auto text-3xl font-bold mb-5">Important FAQ <i class="fa-regular fa-circle-question"></i> </h3>
+
+
+        <div class="w-11/12 mx-auto border-2 px-5 py-5 rounded-lg space-y-1">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-semibold">What is Document Object Model (DOM) ?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                        page so that programs can change the document structure, style, and content. The DOM represents
+                        the document as nodes and objects; that way, programming languages can interact with the page.
+
+                        A web page is a document that can be either displayed in the browser window or as the HTML
+                        source. In both cases, it is the same document but the Document Object Model (DOM)
+                        representation allows it to be manipulated. As an object-oriented representation of the web
+                        page, it can be modified with a scripting language such as JavaScript.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" />
+                <div class="collapse-title text-xl font-semibold">How Do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-xl font-medium mb-2">JavaScript provides several methods to select DOM elements. Here
+                        are some of them:</p>
+                    <ul class="space-y-1" type="number">
+                        <li>1. Using getElementById:
+                            The getElementById method allows you to select an element by its ID. This method returns the
+                            element object if it finds an element with the specified ID, otherwise, it returns null.
+
+                            let element = document.getElementById("myId");
+                        </li>
+                        <li>2. Using getElementsByClassName:
+                            The getElementsByClassName method allows you to select elements by their class name. It
+                            returns a collection of all elements in the document with the specified class name.
+
+                            let elements = document.getElementsByClassName("myClass");
+                        </li>
+                        <li>3.Using getElementsByTagName:
+                            The getElementsByTagName method allows you to select elements by their tag name. It returns
+                            a collection of all elements in the document with the specified tag name.
+
+                            let elements = document.getElementsByTagName("p");
+                        </li>
+                        <li>4. Using querySelector:
+                            The querySelector method allows you to select the first element that matches a specified CSS
+                            selector(s) in the document.
+
+                            let element = document.querySelector(".myClass") </li>
+                        <li>5. Using querySelectorAll:
+                            The querySelectorAll method allows you to select all elements that match a specified CSS
+                            selector(s) in the document.
+                            et elements = document.querySelectorAll(".myClass");</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-semibold"> What is event delegation and in the context of the
+                    DOM and why is it useful? </div>
+                <div class="collapse-content">
+                    <p class="text-lg font-medium mb-2">
+                        Event delegation involves attaching a single event listener to a parent element to handle events
+                        for all child components, utilizing event bubbling. Instead of adding listeners to each. The
+                        parent listens for events triggered by any child
+                        This technique provides various benefits:
+
+
+                        <li class="mb-1">Better performance and less usage of memory
+                            .</li>
+                        <li class="mb-1">The time required for setting up an event handler on the page is less
+                            .</li>
+                        <li class="mb-1">Simplifies code and event management.</li>
+                        <li class="mb-1">The document object is available immediately and the element is rendered
+                            perfectly without any delay.</li>
+                        <li class="mb-1">Easy syntax and usage</li>
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-semibold">How do you manipulate an element's attributes and
+                    styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-lg font-medium mb-2">We can manipulate an element's attributes and styles in the DOM
+                        using JavaScript:
+                    <p class="text-xl font-semibold"> Attributes: </p>
+                    <li>Use element.setAttribute to set an attribute.
+                    </li>
+                    <li>Use element.getAttribute to get an attribute value</li>
+                    <li>Use element.removeAttribute to remove an attribute</li>
+                    <p class="text-xl font-semibold">Styles:</p>
+                    <li> Use element.style.property = 'value' to modify an inline style</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
