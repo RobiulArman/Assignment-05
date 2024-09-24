@@ -37,7 +37,8 @@
     <nav class=" container mx-auto sticky top-0 w-full bg-transparent backdrop-blur-sm z-50">
 
 
-        <div class="bg-navbg flex flex-col md:flex-row justify-center md:justify-around items-center gap-4 py-7 rounded-lg">
+        <div
+            class="bg-navbg flex flex-col md:flex-row justify-center md:justify-around items-center gap-4 py-7 rounded-lg">
             <div>
                 <a href="blog.html">
                     <button class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold">Blog</button>
@@ -52,19 +53,20 @@
                 <h3 class="text-xl font-semibold opacity-80"><span id="grand-total">50000</span> BDT</h3>
             </div>
         </div>
-    
+
         <div class="flex  gap-5 justify-center my-5">
             <button id="donation-btn"
                 class="bg-btnPrimary px-5 py-2 rounded-xl text-xl font-bold border-2">Donation</button>
-            <button id="history-btn" class="text-xl font-semibold opacity-80 border-2 px-5 py-2 rounded-lg">History</button>
+            <button id="history-btn"
+                class="text-xl font-semibold opacity-80 border-2 px-5 py-2 rounded-lg">History</button>
         </div>
     </nav>
 
-    
+
     <main>
 
 
-        <section class="space-y-4" id="donation-section">
+        <section class="space-y-5" id="donation-section">
             <!-- Donation for Noakhali -->
             <section class="w-11/12 mx-auto">
                 <div class="hero py-5 border-2 rounded-lg">
@@ -121,7 +123,7 @@
                             </p>
                             <input class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number" name=""
                                 id="amount-feni" placeholder="Write Donation Ammount"> <br>
-                            <button  id="donate-feni" class="btn bg-btnPrimary w-full">Donate Now</button>
+                            <button id="donate-feni" class="btn bg-btnPrimary w-full">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -138,7 +140,7 @@
                         <div class="w-full md:w-1/2">
                             <div class="bg-slate-300 rounded-lg px-3 py-2 max-content gap-4 inline-flex mb-5">
                                 <img src="assets/coin.png" alt="">
-                                <p class="text-lg font-semibold"><span id="quota-total">0</span> BDT</p>
+                                <p class="text-lg font-semibold"><span id="quota-total">100</span> BDT</p>
                             </div>
                             <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
                             <p class="py-6">
@@ -153,25 +155,25 @@
                             </p>
                             <input class="w-full my-3 px-5 py-3 border-2 rounded-lg" type="number" name=""
                                 id="amount-quota" placeholder="Write Donation Ammount"> <br>
-                            <button onclick="dialog_box.showModal()"
-                            id="donate-quota" class="btn bg-btnPrimary w-full">Donate Now</button>
+                            <button onclick="dialog_box.showModal()" id="donate-quota"
+                                class="btn bg-btnPrimary w-full">Donate Now</button>
                         </div>
                     </div>
                 </div>
             </section>
         </section>
 
-         <!-- History Section -->
+        <!-- History Section -->
 
-         <section>
+        <section>
             <div id="History-section" class="space-y-4 hidden">
 
             </div>
         </section>
 
-         <!-- The Modal of Congrates-->
+        <!-- The Modal of Congrates-->
 
-         <dialog id="congo_box" class="modal modal-bottom sm:modal-middle">
+        <dialog id="congo_box" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box text-center space-y-3">
                 <h3 class="text-3xl font-bold">Congrates!</h3>
                 <div class="flex justify-center"><img src="assets/coin.png" alt=""></div>
